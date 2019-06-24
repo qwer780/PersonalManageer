@@ -75,6 +75,8 @@
     <Content Include="Default.aspx" />
     <Content Include="exit.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\1.jpg" />
+    <Content Include="images\2.jpg" />
     <Content Include="infomanage.aspx" />
     <Content Include="infoview.aspx" />
     <Content Include="instruction.aspx" />
@@ -156,7 +158,6 @@
     <Content Include="Web.sitemap" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>
