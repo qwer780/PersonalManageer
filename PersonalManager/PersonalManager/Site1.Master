@@ -1,4 +1,4 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="PersonalManager.Site1" %>
 
 <!DOCTYPE html>
 
@@ -28,7 +28,7 @@
 
         <hr />
         <div>
-            ? 2019 Personnel managemnet system, Inc. Terms Privacy, Designed by Hejiabao && Mr.li && Wen && Mr.Wu
+            @2019 Personnel managemnet system, Inc. Terms Privacy, Designed by Hejiabao && Mr.li && Wen && Mr.Wu
         </div>
 
     </form>
