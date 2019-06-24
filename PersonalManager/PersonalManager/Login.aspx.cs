@@ -33,11 +33,11 @@ namespace PersonalManager
             else if (ifcom == true && DropDownList1.Text == "管理员")
             {
                 mode = 2;
-
+                
             }
             else
             {
-                Label1.Text="账号或密码错误，请重新输入！"
+                Label1.Text = "账号或密码错误，请重新输入！";
             }
             SQL.con_close();
         }
