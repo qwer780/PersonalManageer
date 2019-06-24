@@ -1,0 +1,36 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="WebApplication1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            
+            <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="websitemap" />
+            <br />
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="40px">
+            </asp:Menu>
+        </div>
+        <hr />
+
+   
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <hr />
+        <div>
+            ? 2019 Personnel managemnet system, Inc. Terms Privacy, Designed by Hejiabao && Mr.li && Wen && Mr.Wu
+        </div>
+
+    </form>
+</body>
+</html>
