@@ -11,7 +11,8 @@ namespace PersonalManager
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if(Login.mode==1)
+                Response.Write("<script>alert('权限不足，无法操作！');window.location.href ='Default.aspx'</script>");
         }
     }
 }

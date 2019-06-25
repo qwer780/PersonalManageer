@@ -1,7 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
   <siteMapNode url="~/Default.aspx" title="首页"  description="首页">
-    <siteMapNode url="~/infomanage.aspx" title="人事信息管理"  description="人事信息管理" />
+    
+    <siteMapNode url="~/infomanage.aspx" title="人事信息管理"  description="人事信息管理" >
+      
+     <siteMapNode url="" title="查询信息"  description="查询信息" >
+        <siteMapNode url="" title="员工"  description="员工" />
+        <siteMapNode url="" title="部门"  description="部门" />
+     </siteMapNode>
+    <siteMapNode url="" title="添加信息"  description="添加信息" />
+    <siteMapNode url="" title="修改信息"  description="修改信息" />
+    <siteMapNode url="" title="删除信息"  description="删除信息" />
+    </siteMapNode>
     <siteMapNode url="~/infoview.aspx" title="人事信息浏览"  description="人事信息浏览" />
     <siteMapNode url="~/datatable.aspx" title="数据报表"  description="数据报表" />
     <siteMapNode url="~/instruction.aspx" title="系统使用说明"  description="系统使用说明" />
