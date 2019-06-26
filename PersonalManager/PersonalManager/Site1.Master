@@ -21,7 +21,7 @@
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="websitemap" />
             <br />
             <div class="auto-style1">
-            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="40px" >
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="40px" BackColor="White" >
                 <StaticMenuItemStyle BackColor="White" />
             </asp:Menu>
             </div>
@@ -35,6 +35,8 @@
         </div>
 
         <hr />
+
+
         <div>
             @2019 Personnel managemnet system, Inc. Terms Privacy, Designed by Hejiabao && Mr.li && Wen && Mr.Wu
         </div>
