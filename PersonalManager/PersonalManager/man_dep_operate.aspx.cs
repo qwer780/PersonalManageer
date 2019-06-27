@@ -30,28 +30,28 @@ namespace PersonalManager
 
         protected void Button1_Click(object sender, EventArgs e) //添加
         {
-             try
-             {
-            SQL.open();
-            if (CheckBox1.Checked == true)
+            try
             {
-                string sqlstr = string.Format("INSERT INTO department(did,dname,director)" + "VALUES('{0}',N'{1}','{2}')",
-                      TextBox1.Text, TextBox2.Text, DropDownList1.Text);
-                SqlCommand cmd = new SqlCommand(sqlstr, SQL.open());
-                cmd.ExecuteNonQuery();
-                
-            }
-            else
-            {
-                string sqlstr1 = string.Format("INSERT INTO department(did,dname)" + "VALUES('{0}',N'{1}')",
-                TextBox1.Text, TextBox2.Text);
-            SqlCommand cmd1 = new SqlCommand(sqlstr1, SQL.open());
-            cmd1.ExecuteNonQuery();
-        }
+                SQL.open();
+                if (CheckBox1.Checked == true)
+                {
+                    string sqlstr = string.Format("INSERT INTO department(did,dname,director)" + "VALUES('{0}',N'{1}','{2}')",
+                          TextBox1.Text, TextBox2.Text, DropDownList1.Text);
+                    SqlCommand cmd = new SqlCommand(sqlstr, SQL.open());
+                    cmd.ExecuteNonQuery();
+
+                }
+                else
+                {
+                    string sqlstr1 = string.Format("INSERT INTO department(did,dname)" + "VALUES('{0}',N'{1}')",
+                    TextBox1.Text, TextBox2.Text);
+                    SqlCommand cmd1 = new SqlCommand(sqlstr1, SQL.open());
+                    cmd1.ExecuteNonQuery();
+                }
                 SQL.con_close();
                 ShowData1();
                 Label1.Text = "添加成功";
-           }
+            }
             catch
             {
                 Label1.Text = "添加失败";
@@ -69,10 +69,10 @@ namespace PersonalManager
                                 TextBox2.Text, DropDownList1.Text, TextBox1.Text);
                     SqlCommand cmd = new SqlCommand(sqlstr, SQL.open());
                     cmd.ExecuteNonQuery();
-if (cmd.ExecuteNonQuery() >= 0)
-                    Label1.Text = "修改成功!";
-                else
-                    Label1.Text = "请确认需要修改的信息填入正确!";
+                    if (cmd.ExecuteNonQuery() >= 0)
+                        Label1.Text = "修改成功!";
+                    else
+                        Label1.Text = "请确认需要修改的信息填入正确!";
                 }
                 else
                 {
@@ -87,7 +87,7 @@ if (cmd.ExecuteNonQuery() >= 0)
                 }
                 SQL.con_close();
                 ShowData1();
-                
+
             }
             catch
             {

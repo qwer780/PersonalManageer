@@ -61,7 +61,6 @@ namespace PersonalManager
         {
             TextBox1.Text = "";
             TextBox2.Text = "";
-        }      
-
+        }
     }
 }

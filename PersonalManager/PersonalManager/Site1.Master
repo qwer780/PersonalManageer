@@ -16,15 +16,18 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            
+        <div style="background-color:#000000">
             <asp:SiteMapDataSource ID="SiteMapDataSource1" runat="server" SiteMapProvider="websitemap" />
             <br />
             <div class="auto-style1">
-            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="40px" BackColor="White" >
-                <StaticMenuItemStyle BackColor="White" />
+            <asp:Menu ID="Menu1" runat="server" DataSourceID="SiteMapDataSource1" Orientation="Horizontal" StaticDisplayLevels="2" StaticSubMenuIndent="40px" BackColor="White" ForeColor="White" >
+                <DynamicMenuItemStyle BackColor="Black" />
+                <DynamicMenuStyle BackColor="Black" />
+                <DynamicSelectedStyle ForeColor="White" />
+                <StaticMenuItemStyle BackColor="Black" ForeColor="White" />
             </asp:Menu>
             </div>
+
         </div>
         <hr />
 

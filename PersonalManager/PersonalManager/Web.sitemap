@@ -15,7 +15,8 @@
     <siteMapNode url="~/infoview.aspx" title="人事信息浏览"  description="人事信息浏览" />
     <siteMapNode url="~/datatable.aspx" title="数据报表"  description="数据报表" />
     <siteMapNode url="~/instruction.aspx" title="系统使用说明"  description="系统使用说明" />
-    <siteMapNode url="~/exit.aspx" title="退出"  description="退出到登陆界面" />
+    <siteMapNode url="~/change_pas.aspx" title="修改密码"  description="修改密码" />
+    <siteMapNode url="~/exit.aspx" title="退出"  description="退出" />
   </siteMapNode>
 </siteMap>
 

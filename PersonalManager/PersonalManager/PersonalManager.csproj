@@ -71,6 +71,7 @@
     <Content Include="App_Data\Database_log.ldf">
       <DependentUpon>Database.mdf</DependentUpon>
     </Content>
+    <Content Include="change_pas.aspx" />
     <Content Include="datatable.aspx" />
     <Content Include="Default.aspx" />
     <Content Include="em_search.aspx" />
@@ -78,7 +79,10 @@
     <Content Include="Global.asax" />
     <Content Include="images\1.jpg" />
     <Content Include="images\2.jpg" />
-    <Content Include="infomanage.aspx" />
+    <Content Include="images\3.jpg" />
+    <Content Include="images\4.jpg" />
+    <Content Include="images\5.jpg" />
+    <Content Include="images\6.jpg" />
     <Content Include="infoview.aspx" />
     <Content Include="instruction.aspx" />
     <Content Include="man_dep_operate.aspx" />
@@ -87,6 +91,13 @@
     <Content Include="Login.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="change_pas.aspx.cs">
+      <DependentUpon>change_pas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="change_pas.aspx.designer.cs">
+      <DependentUpon>change_pas.aspx</DependentUpon>
+    </Compile>
     <Compile Include="datatable.aspx.cs">
       <DependentUpon>datatable.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -117,13 +128,6 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
-    </Compile>
-    <Compile Include="infomanage.aspx.cs">
-      <DependentUpon>infomanage.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="infomanage.aspx.designer.cs">
-      <DependentUpon>infomanage.aspx</DependentUpon>
     </Compile>
     <Compile Include="infoview.aspx.cs">
       <DependentUpon>infoview.aspx</DependentUpon>
@@ -173,6 +177,7 @@
   <ItemGroup>
     <None Include="packages.config" />
     <Content Include="Site1.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
