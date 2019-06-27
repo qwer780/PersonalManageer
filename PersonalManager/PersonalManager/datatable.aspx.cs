@@ -10,7 +10,6 @@ namespace PersonalManager
 {
     public partial class datatable : System.Web.UI.Page
     {
-        string sqlconn = "Data Source = (LocalDB)\\MSSQLLocalDB;AttachDbFilename='|DataDirectory|\\Database.mdf';";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Login.mode == 1)
